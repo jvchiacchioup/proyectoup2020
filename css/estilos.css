@@ -34,8 +34,9 @@ ul { display: flex; flex-flow: row nowrap; justify-content: center;}
 .row.justify-content-md-center { display: flex; flex-flow: row nowrap; justify-content: space-around; padding-left: 10%;}
 .col.col-lg-2 {display: flex; flex-flow: row nowrap; justify-content: center; padding-top: 1%;}
 .p1 { font-family:'Permanent Marker',cursive;
-font-size: 30px; text-align: center; justify-content: stretch;
+font-size: 30px; text-align: center; justify-content: stretch; color: #000000;
 animation: titlefe 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;}
+.p4 {font-family: 'Permanent Marker', cursive; font-size: 25px; color: rgb(226, 161, 145);}
 @keyframes titlefe {
  0% {
    letter-spacing: 1em;
@@ -66,3 +67,15 @@ animation: titlefe 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;}
 }
 .p2 { font-family: 'Shadows Into Light', cursive; font-size: 30px; color: #FFFFFF;
 }
+p { color: #ffb31c;}
+.obrasin { width: 50%;}
+.pexpo { width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: rgb(179, 81, 81);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  margin:0px auto;
+  padding:3%}
