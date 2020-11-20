@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+body {
+    padding: 0;
+     margin: 0;
+     background-image: url('../img/persistencia.jpg');
+     background-size: cover;
+}
+.obras {
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/dobras.jpg');
+    background-size: cover;
+}
+.expo {
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/dcurio.png');
+    background-size: cover;
+}
+.cv {
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+}
+html { font-family: 'Oswald', sans-serif;}
+.logo { width: 300px}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top { background-color: #D43D4A;}
+li { list-style: none; padding: 10px;}
+a{text-decoration: none; color: #FFFFFF;}
+ul { display: flex; flex-flow: row nowrap; justify-content: center;}
+.container { display: flex; flex-flow: row nowrap; justify-content: space-between;}
+.sd { width: 22%; border-radius: 30%;}
+.row.justify-content-md-center { display: flex; flex-flow: row nowrap; justify-content: space-around; padding-left: 10%;}
+.col.col-lg-2 {display: flex; flex-flow: row nowrap; justify-content: center; padding-top: 1%;}
+.p1 { font-family:'Permanent Marker',cursive;
+font-size: 30px; text-align: center; justify-content: stretch;
+animation: titlefe 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;}
+@keyframes titlefe {
+ 0% {
+   letter-spacing: 1em;
+           transform: translateZ(400px) translateY(300px);
+   opacity: 0;
+ }
+ 40% {
+   opacity: 0.6;
+ }
+ 100% {
+           transform: translateZ(0) translateY(0);
+   opacity: 1;
+ }
+}
+@keyframes titlefe {
+ 0% {
+   letter-spacing: 1em;
+           transform: translateZ(400px) translateY(300px);
+   opacity: 0;
+ }
+ 40% {
+   opacity: 0.6;
+ }
+ 100% {
+           transform: translateZ(0) translateY(0);
+   opacity: 1;
+ }
+}
+.p2 { font-family: 'Shadows Into Light', cursive; font-size: 30px; color: #FFFFFF;
+}
