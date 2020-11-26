@@ -154,7 +154,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top { background-color: r
 .col {flex-flow:  column nowrap;
   align-content: flex-start;
 }
-  
+  .sd {width: 20%;
+  border-radius: 4%;}
   a {color: tomato;}
   p { flex-flow:  column nowrap;
     align-content: flex-start;
