@@ -25,18 +25,21 @@ body {
 }
 html { font-family: 'Oswald', sans-serif;}
 .logo { width: 300px}
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top { background-color: #D43D4A;}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top { background-color: #D43D4A;display: flex;flex-flow: row nowrap;justify-content: left;}
 li { list-style: none; padding: 10px;}
 a{text-decoration: none; color: #FFFFFF;}
+a:hover {
+  color: #daae1e;
+}
 ul { display: flex; flex-flow: row nowrap; justify-content: center;}
-.container { display: flex; flex-flow: row nowrap; justify-content: space-between;}
+.collapse.navbar-collapse { padding-left: 35%;}
 .sd { width: 22%; border-radius: 30%;}
 .row.justify-content-md-center { display: flex; flex-flow: row nowrap; justify-content: space-around; padding-left: 10%;}
 .col.col-lg-2 {display: flex; flex-flow: row nowrap; justify-content: center; padding-top: 1%;}
 .p1 { font-family:'Permanent Marker',cursive;
 font-size: 30px; text-align: center; justify-content: stretch; color: #000000;
 animation: titlefe 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;}
-.p4 {font-family: 'Permanent Marker', cursive; font-size: 25px; color: rgb(226, 161, 145);}
+.p4 {font-family: 'Permanent Marker', cursive; font-size: 25px; color: rgb(230, 122, 95);}
 @keyframes titlefe {
  0% {
    letter-spacing: 1em;
@@ -65,12 +68,29 @@ animation: titlefe 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;}
    opacity: 1;
  }
 }
-.p2 { font-family: 'Shadows Into Light', cursive; font-size: 30px; color: #FFFFFF;
+.p2 { font-family: 'Shadows Into Light', cursive; font-size: 30px; color: #ffffff;
 }
-p { color: #ffb31c;}
-.obrasin { width: 50%;}
-.pexpo { width: 100px;
-	height: 100px;
+p { color: #ffaa00;}
+
+.obr { width: 50%;}
+.obrasin {position: relative;}
+
+.obr { width: 50%;}
+.fr { width: 85%;}
+.obr , .fr {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.obrasin:hover .obr , .obrasin:hover .fr {
+  opacity: 0.3;
+}
+
+.pexpo { width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	background: rgb(179, 81, 81);
 	display: flex;
@@ -79,3 +99,66 @@ p { color: #ffb31c;}
 	text-align: center;
   margin:0px auto;
   padding:3%}
+  .exp { width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #daae1e , #a5431d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    padding: 40px;
+    position: relative;
+  animation: move 2s infinite;
+animation-direction: alternate;
+transition-timing-function: ease-out;}
+
+@keyframes move {
+  0%   {top: 0px; left: 40px;}
+  100%  {top: 40px; left: 0px;}
+}
+.footer { background-color:  #D43D4A;
+  display: flex;
+  justify-content: center;
+text-align: center;
+margin-top: 2%;}
+
+form { padding-top:5%;
+padding-bottom: 10%;}
+.enter { font-family:'Oswald', sans-serif;
+background-color: rgb(144, 196, 216);
+}
+.enter:hover {color: #FFFFFF;}
+.form-check-input {
+  cursor: pointer;
+}
+.mensaje { font-size: 12px;}
+.p5 { font-family:'Permanent Marker',cursive;
+  font-size: 30px; color: rgb(218, 159, 34);}
+
+  @media screen and (min-width: 600px) and (max-width: 900px)
+  { 
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top {display: flex;flex-flow: column; align-content: stretch;}
+    .collapse.navbar-collapse { padding: 0%;}
+    .col {display: flex; flex-flow: column; align-content:center;}
+  }
+  @media screen and (min-width: 0px) and (max-width: 599px)
+  { 
+body , .obras , .cv { background-repeat: no-repeat; background-attachment: fixed;}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top { background-color: rgba(255, 255, 255, 0);flex-flow: column; align-content: stretch;padding:0%;}
+    .collapse.navbar-collapse { padding: 0%;
+  flex-flow: column nowrap;
+  align-content: right ;
+}
+.col {flex-flow:  column nowrap;
+  align-content: flex-start;
+}
+  
+  a {color: tomato;}
+  p { flex-flow:  column nowrap;
+    align-content: flex-start;
+    font-size: 11px;
+}
+  .logo { width: 200px;}
+}
